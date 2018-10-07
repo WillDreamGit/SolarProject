@@ -1,0 +1,14 @@
+Description:
+The package will initialize the Mosquitto to use TSL connection.
+Then, subscribe to the MQTT topic.
+Once a subscribed message is received, a callback function will be executed. 
+Callbak function will parse the payload.
+Based on the parsed value, the application will create instance if its record is not found. Otherwise, the applicatio will update the sensor values.
+
+Dependency package:
+OpenSSL
+Mosquitto
+
+Note:
+Please note that the code is under development. It is not yet fully tested and debug.
+Hence, it may not compilable.
